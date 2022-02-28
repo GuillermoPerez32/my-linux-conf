@@ -1,0 +1,10 @@
+alias aliases='nano .my_aliases'
+alias cntlmconf='sudo nano /etc/cntlm.conf'
+alias cntlmrestart='sudo service cntlm restart'
+alias off='shutdown -P 0'
+
+function lazygit() {
+    git add .
+    git commit -a -m "$1"
+    git push
+}
